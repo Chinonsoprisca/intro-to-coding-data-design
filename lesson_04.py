@@ -1,4 +1,4 @@
-""" word = input("enter a word: ")
+word = input("enter a word: ")
 character = None
 count = 0
 for character in word:
@@ -32,8 +32,8 @@ for element in sentence:
 
 
 
-Ask the user for a sentwence
-print when the index is a multiple of 3
+#Ask the user for a sentwence
+#print when the index is a multiple of 3
 
 sentence = "Hello, Redi!"
 counter = 0
@@ -51,7 +51,7 @@ for number in numbers:
 print(sum)
 
 
- """
+ 
 
 names = ["Joy", "Faith", "Oluchi", "Vicky"]
 names.append("Prisca")

@@ -10,16 +10,16 @@ The smallest number is 1.
 # Exercise 5 solution
 numbers = [12, 3, 5, 19, 7, 3, 1, 5]
 
-max = None
-min = None
+largest = None
+smallest = None
 for number in numbers:
-    if max is None:
-        max = number
-        min = number
+    if largest is None:
+        largest = number
+        smallest = number
     else:
-        if number > max:
-            max = number
-        if number < min:
-            min = number
-print(f"The largest number is {max}.")
-print(f"The smallest number is {min}.")
+        if number > largest:
+            largest = number
+        if number < smallest:
+            smallest = number
+print(f"The largest number is {largest}.")
+print(f"The smallest number is {smallest}.")
