@@ -8,7 +8,7 @@ and stores them in a list. Then, create a sentence that says,
 
 # Exercise 3 solution
 
-while True:
+""" while True:
     #Ask the user for input
     colors_input = input("Enter exactly 5 of your favorite colors, separated by commas: ")
 
@@ -31,3 +31,16 @@ while True:
 #Join the list and print the final result
 colors_string = ", ".join(colors_list)
 print(f"Your favorite colors are: {colors_string}")
+ """
+
+
+# OR
+colors = []
+for counter in range (5):
+    color = input("please enter a favourite color or exit to end: ")
+    if color == "exit":
+        break
+    colors.append(color)
+favourite_colors = ",".join(colors)
+print(f"Your favorite colors are: {favourite_colors}")
+

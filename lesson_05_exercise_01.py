@@ -66,12 +66,12 @@ while True:
     if temp_choice == "Celsius":
         temp_in_c = float(input(f"Please enter the current temperature in Celsius in {city}: "))
         temp_in_f = (temp_in_c * 9 / 5) + 32
-    rain = input("is it raining? Please enter yes or no: ").lower()
+    rain = input("Is it raining? Please enter yes or no: ").lower()
     if rain == "yes":
         rain = "rain"
     else:
         rain = "no rain"
-    sun = input(" is the sun shining? Please enter yes or no: ").lower()
+    sun = input(" Is the sun shining? Please enter yes or no: ").lower()
     if sun == "yes":
         sun = "sun"
     else:
@@ -85,7 +85,7 @@ while True:
 if cities != {}:
     print("Summary:")
 for city, values in cities.items():
-    print(f"{city}: {values["temp_in_c"]:.1f}, {values["temp_in_f"]:.1f}, {values["sun"]} and {values["rain"]}")
+    print(f"{city}: {values["temp_in_c"]:.1f}°C, {values["temp_in_f"]:.1f}°F, {values["sun"]} and {values["rain"]}")
 
     if values["temp_in_c"] < 0:
         print(f"Warning: The temperature in {city} is below the freezing point")
