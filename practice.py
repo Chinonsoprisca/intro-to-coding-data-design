@@ -1,42 +1,10 @@
+import requests
 
-""" Write a program that simulates a simple inventory system. Create a dictionary
-with items as keys and their quantities as values. Allow the user to "buy"
-items by reducing the quantity, and print the updated inventory after each
-purchase.
+# url = "https://api.open-meteo.com/v1/forecast?current_weather=true&latitude=48.13&longitude=11.58&elevation=524"
+url = "https://api.open-meteo.com/v1/forecast?current_weather=true&latitude=48.13&longitude=11.58&elevation=524&daily=temperature_2m_max,temperature_2m_min&timezone=Europe%2FBerlin"
 
-inventory = {
-    "apple": 5,
-    "banana": 3,
-    "orange": 2,
-    "pear": 1
-}
-Example output:
-Please enter the name of an item to buy: apple
-There are 4 apples left in stock.
-Please enter the name of an item to buy: pear
-There are 0 pears left in stock.
-Please enter the name of an item to buy: pear
-Sorry, there are no pears left in stock.
-Please enter the name of an item to buy: exit
- """
 
-print("Avalaible items include: apple, banana, orange, pear")
+response = requests.get(url)
 
-inventory = {
-    "apple": 5,
-    "banana": 3,
-    "orange": 2,
-    "pear": 1
-}
-
-while True:
-    item = input("Please enter an item you want to buy or enter exit: ")
-    if item == "exit":
-        break
-    if item in inventory and inventory[item] > 0:
-        inventory[item] -= 1
-        print(f"There are {inventory[item]} {item} left in stock")
-    else:
-        print(f"Sorry! there are no {item} left in stock.")
-    if item not in inventory:
-        print("Sorry! item is not avaible")
+data = response.json()
+print(data)
