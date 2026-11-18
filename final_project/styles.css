@@ -1,0 +1,93 @@
+.home {
+    background-image: url("images/homepage5.jpg");
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center center;
+    box-shadow: inset 0 0 0 2000px rgba(7, 6, 6, 0.715);
+    padding-bottom: 5px;
+    padding-top: .67rem;
+}
+
+h1 {
+    font-size: 90px;
+    color: #F9FAFB;
+}
+
+h2 {
+    color: #F9FAFB;
+    font-size: 35px;
+}
+
+h4 {
+    font-size: 25px;
+    color: #F9FAFB;
+}
+
+#about {
+    padding-bottom: 50px;
+}
+
+.aboutUsHeader {
+    text-align: center;
+    font-size: 30px;
+}
+
+.aboutUsText {
+    text-align: center;
+    margin: auto;
+    max-width: 60%;
+    font-size: 20px;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.item {
+    flex: 40%;
+}
+
+.item>h3 {
+    text-align: center;
+}
+
+.item>details>summary {
+    border: 5px solid blue;
+    border-radius: 20px;
+    padding: 20px;
+    height: 200px;
+}
+
+.men>details>summary {
+    background-image: url(images/men1.jpg);
+    background-position: center center;
+    background-size: contain;
+}
+
+.women>details>summary {
+    background-image: url(images/women8.jpg);
+    background-position: center center;
+    background-size: contain;
+}
+
+@media (max-width: 500px) {
+    .item {
+        flex: 100%;
+    }
+
+    .aboutUsText {
+        text-align: center;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutUsText {
+        text-align: center;
+        max-width: 80%;
+    }
+}
