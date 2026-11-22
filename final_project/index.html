@@ -9,6 +9,12 @@
 </head>
 
 <body>
+    <div class="topnav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#styles">Styles&Fabrics</a>
+        <a href="#contact">Contact</a>
+    </div>
     <div class="home">
         <div class="home2">
             <h1>Cherry <small>Uni-Fits&#x1faa1</small></h1>
@@ -51,6 +57,7 @@
                     <summary>
                         Click here for more
                     </summary>
+                    <img src="images/men1.jpg" alt="image" height="500" />
                     <img src="images/men2.jpg" alt="image" height="500" />
                     <img src="images/men3.jpg" alt="image" height="500" />
                     <img src="images/men4.jpg" alt="image" height="500" />
@@ -67,6 +74,7 @@
                     <summary>
                         Click here for more
                     </summary>
+                    <img src="images/women8.jpg" alt="image" height="500" />
                     <img src="images/women1.jpg" alt="image" height="500" />
                     <img src="images/women2.jpg" alt="image" height="500" />
                     <img src="images/women3.jpg" alt="image" height="500" />
@@ -74,7 +82,6 @@
                     <img src="images/women5.jpg" alt="image" height="500" />
                     <img src="images/women6.jpg" alt="image" height="500" />
                     <img src="images/women7.jpg" alt="image" height="500" />
-                    <img src="images/women8.jpg" alt="image" height="500" />
                     <img src="images/women9.jpg" alt="image" height="500" />
                     <img src="images/women10.jpg" alt="image" height="500" />
 
@@ -124,6 +131,30 @@
 
         </div>
     </section>
+
+    <section class="contact" id="contact">
+        <div class="info">
+            <h2 class="contactTitle">Our Contact Info</h2>
+            <h3>Phone</h3>
+            <p>+2348105960512</p>
+            <a href="http://wa.me/0805960512">Chat Us on WhatsApp</a>
+        </div>
+        <div class="form">
+            <h2 class="contactTitle">Contact Form</h2>
+            <form action="" method="get">
+                <label for="name">Your name:</label><br>
+                <input type="text" name="name" placeholder="Jane Smith" id="name"><br>
+                <label for="email">Your email:</label><br>
+                <input type="email" name="email" placeholder="jane@example.com" id="email"><br>
+                <label for="user-message">Your Message</label><br>
+                <textarea id="user-message" name="user-message" rows="5" width="40px"
+                    placeholder="What can we do for you"></textarea><br>
+                <input type="submit" onclick="alert('Message sent')" class="submit" value="Submit">
+                <!-- <input type="button" onclick="alert('Message sent')" class="submit" value="Submit"> -->
+            </form>
+        </div>
+    </section>
+
 
 </body>
 
